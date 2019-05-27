@@ -6,7 +6,7 @@ Memberships
 
 
 Stripe Integration
-* Users should have a stripe customer token in the users table
+* Users should have a stripe customer token in the users table **Done**
 
 * Javascript should prevent Pro form from submitting, when user fills it out,
 and should send the card info to Stripe. Stripe will return with a card token.
