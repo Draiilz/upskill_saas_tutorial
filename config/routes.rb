@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+
   root to: 'pages#home'
+  devise_for :users, controllers: { registrations: 'users/registrations'}
   get 'about', to: 'pages#about'
   resources :contacts, only: :create
   # This creates custom URL and displays it to application.html.erb as new_contact_path 
